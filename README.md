@@ -10,3 +10,7 @@ image of csv files
 
 image of 'color of matplotlib spot'
 ![set_color_05](https://user-images.githubusercontent.com/68888169/162611856-6e1896aa-1b1b-43e4-962b-c87ed6945540.png)
+
+
+The number of cluster
+![Center_number](https://user-images.githubusercontent.com/68888169/162699457-f1afdc2f-6949-473a-99f4-69dbfb4604f9.jpg)
