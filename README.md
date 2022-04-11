@@ -14,3 +14,6 @@ image of 'color of matplotlib spot'
 
 The number of cluster
 ![Center_number](https://user-images.githubusercontent.com/68888169/162699457-f1afdc2f-6949-473a-99f4-69dbfb4604f9.jpg)
+
+Greedy search + Clustering
+![Greedy_search](https://user-images.githubusercontent.com/68888169/162760333-d1690031-348c-4045-a585-1f7450786c20.jpg)
