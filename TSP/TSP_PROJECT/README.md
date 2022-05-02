@@ -63,7 +63,7 @@ mutate the overlapping elements into the order in which they were in the best pa
 
 In conclusion
 
-![image](https://user-images.githubusercontent.com/68888169/166192892-ce7f1cba-611b-487a-a3a4-80335fdea60a.png)
+![image](https://user-images.githubusercontent.com/68888169/166193148-c606396a-c7f7-46f2-80f7-93060cc24dd8.png)
 
 Repeat this course with for-loops to get minimum cost path
 
