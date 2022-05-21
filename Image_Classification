@@ -1,4 +1,4 @@
-Deep Learning for Image Classification with EM Algorithm
+#Deep Learning for Image Classification with EM Algorithm
 
 1. 관리자 권한으로 Anaconda prompt 띄움
 conda update -n base -c defaults conda 
