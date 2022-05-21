@@ -33,8 +33,13 @@ conda env remove --n 가상환경이름
 ```
 
 ## 3. 가상환경 접근
+ ``` anaconda
 conda activate vir_project2
-(가상환경 나오기 conda deactivate)
+ ```
+(가상환경 나오기)
+ ``` anaconda
+conda deactivate
+ ```
 
 ## 4. 주피터 노트북 설치
 conda install -n vir_project2 ipython notebook jupyter
