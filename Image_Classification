@@ -23,6 +23,7 @@ conda install -n vir_project2 ipython notebook jupyter
 conda install -n vir_project2 tensorflow-gpu==2.6.0 -y
 (-y 는 proceed ([y]/n)에서 y로 전부 해주기)
 
+
 6.커널 등록
 python -m ipykernel install --user --name ai_project2
 
