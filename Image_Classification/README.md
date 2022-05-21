@@ -1,7 +1,8 @@
 # Image Classification Preferences
 Deep Learning for Image Classification with EM Algorithms
 
-## 1. 관리자 권한으로 Anaconda prompt 띄움
+## 1. anaconda version update
+관리자 권한으로 Anaconda prompt 띄움
  ``` anaconda
 conda update -n base -c defaults conda
 ```
