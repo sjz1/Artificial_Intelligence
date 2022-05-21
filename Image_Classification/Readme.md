@@ -1,5 +1,6 @@
 
-1. 관리자 권한으로 Anaconda prompt 띄움
+
+#1. 관리자 권한으로 Anaconda prompt 띄움
 conda update -n base -c defaults conda -> 아나콘다 업데이트
 
 2.가상환경 만들기
