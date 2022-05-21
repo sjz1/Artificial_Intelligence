@@ -42,14 +42,20 @@ conda deactivate
  ```
 
 ## 4. 주피터 노트북 설치
+ ``` anaconda
 conda install -n vir_project2 ipython notebook jupyter
+ ```
 ## 5. 텐서플로 설치
+ ``` anaconda
 conda install -n vir_project2 tensorflow-gpu==2.6.0 -y
+ ```
 (-y 는 proceed ([y]/n)에서 y로 전부 해주기)
 
 ## 6.커널 등록
+ ``` anaconda
 python -m ipykernel install --user --name ai_project2
-
+ ```
+ 
 ## 7.커널 삭제
 jupyter kernelspec uninstall 커널이름
 
