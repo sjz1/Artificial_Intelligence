@@ -13,21 +13,23 @@ conda update -n base -c defaults conda
  ``` anaconda
 mkdir dl_project2 
 ```
-접근
+만든 작업 폴더에 접근
  ``` anaconda
 cd dl_project2
 ```
 
-
+가상환경을 만들어줌
 conda create -n vir_project2(가상환경이름) python=3.8
  ``` anaconda
 conda create -n vir_project2 python=3.8
 ```
+가상환경보기
  ``` anaconda
-conda env list <-가상환경보기
+conda env list
  ```
+가상환경 삭제
   ``` anaconda
-conda env remove --n 가상환경이름  <-가상환경 삭제
+conda env remove --n 가상환경이름  
 ```
 
 ## 3. 가상환경 접근
