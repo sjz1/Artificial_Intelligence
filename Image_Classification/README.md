@@ -57,7 +57,9 @@ python -m ipykernel install --user --name ai_project2
  ```
  
 ## 7.커널 삭제
+ ``` anaconda
 jupyter kernelspec uninstall 커널이름
+ ```
 
 ## 본인은 gpu가 보이지 않는 문제 발생
 시스템 환경변수 편집
