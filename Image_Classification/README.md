@@ -1,4 +1,4 @@
-# Image Classification
+# Image Classification Preferences
 Deep Learning for Image Classification with EM Algorithms
 
 ## 1. 관리자 권한으로 Anaconda prompt 띄움
