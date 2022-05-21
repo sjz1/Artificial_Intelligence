@@ -2,10 +2,12 @@
 Deep Learning for Image Classification with EM Algorithms
 
 ## 1. 관리자 권한으로 Anaconda prompt 띄움
- ``` Python
+ ``` anaconda
 conda update -n base -c defaults conda -> 아나콘다 업데이트
+```
 
 ## 2.가상환경 만들기
+
 mkdir dl_project2 <- 작업 폴더 만들기
 cd dl_project2 <- 접근
 conda create -n vir_project2(가상환경이름) python=3.8
