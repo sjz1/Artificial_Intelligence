@@ -56,8 +56,7 @@ conda install -n vir_project2 tensorflow-gpu==2.6.0 -y
  ``` anaconda
 python -m ipykernel install --user --name ai_project2
  ```
- 
-## 7.커널 삭제
+ //커널 삭제//
  ``` anaconda
 jupyter kernelspec uninstall 커널이름
  ```
