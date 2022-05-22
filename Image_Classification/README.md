@@ -32,6 +32,8 @@ conda env list
   ``` anaconda
 conda env remove --n 가상환경이름  
 ```
+![가상환경](https://user-images.githubusercontent.com/68888169/169697197-6441d43e-e823-4352-a631-bca457943447.png)
+
 
 ## 3. 가상환경 접근
  ``` anaconda
