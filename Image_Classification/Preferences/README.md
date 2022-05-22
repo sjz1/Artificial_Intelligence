@@ -223,6 +223,11 @@ https://pytorch.org/get-started/previous-versions/
 pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
+커널 재등록
+ ``` anaconda
+python -m ipykernel install --user --name ai_project2
+ ```
+
 
 ##### 참고 사이트
 ###### 시스템 환경변수 편집
