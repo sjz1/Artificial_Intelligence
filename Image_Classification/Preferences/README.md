@@ -184,9 +184,12 @@ print(device_lib.list_local_devices())
 ![image](https://user-images.githubusercontent.com/68888169/169699255-a22e59c7-6ac9-463e-9456-1919ee0f3443.png)
 
 
-
-
-
+## 8 가상환경에 추가적인 라이브러리 설치
+``` anaconda
+conda install -n vir_project2 numpy
+conda install -n vir_project2 scipy
+conda install -n vir_project2 matplotlib spyder pandas scikit-learn -y
+```
 
 ##### 참고 사이트
 ###### 시스템 환경변수 편집
