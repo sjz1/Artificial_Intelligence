@@ -66,3 +66,5 @@ jupyter kernelspec uninstall 커널이름
 https://cho000023.tistory.com/74
 #cuda 버전바꾸기
 https://tw0226.tistory.com/79?category=872393
+
+
