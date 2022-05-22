@@ -211,9 +211,12 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
 
 ``` python
 import torch
-torch.cuda.is_avaviable()
+torch.cuda.is_available()
 ```
 false 나와서 cuda 11.1로 다시 진행
+
+기존의 pytorch 삭제해야 하므로
+관리자 권한으로 anaconda 재실행
 
 https://pytorch.org/get-started/previous-versions/
 ``` anaconda
