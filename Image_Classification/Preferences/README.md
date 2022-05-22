@@ -191,6 +191,22 @@ conda install -n vir_project2 scipy
 conda install -n vir_project2 matplotlib spyder pandas scikit-learn -y
 ```
 
+## 9 파이토치 설치
+
+링크
+
+https://pytorch.org/
+
+https://pytorch.org/get-started/previous-versions/
+
+확인
+
+cudatoolkit 11.2 가 없어서 11.0으로 다운그레이드 하여서 다운
+``` anaconda
+conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
+```
+
+
 ##### 참고 사이트
 ###### 시스템 환경변수 편집
 https://cho000023.tistory.com/74
