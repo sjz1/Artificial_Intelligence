@@ -213,6 +213,12 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
 import torch
 torch.cuda.is_avaviable()
 ```
+false 나와서 cuda 11.1로 다시 진행
+
+https://pytorch.org/get-started/previous-versions/
+``` anaconda
+pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+```
 
 
 ##### 참고 사이트
