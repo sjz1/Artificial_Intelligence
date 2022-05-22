@@ -64,6 +64,14 @@ jupyter kernelspec uninstall 커널이름
  ```
 
 ## 본인은 gpu가 보이지 않는 문제 발생
+### GPU사용 여부 확인
+ ``` anaconda
+ nvidia-smi
+ ```
+ -> GPU가 사용되지 않는 것을 확인
+ -> CUDA version은 현재 버전이 아닌 권장 버전
+ 
+
 시스템 환경변수 편집
 https://cho000023.tistory.com/74
 #cuda 버전바꾸기
