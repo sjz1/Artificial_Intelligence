@@ -76,14 +76,13 @@ jupyter kernelspec uninstall 커널이름
  
  원인을 분석하기 위해 tensorflow version 확인
  
- 아래 코드를 통해 pip 와 conda에 모두 tensorflow 2.6.0 version으로 다운 (conda만 해서 안된다는 가정)
-  ``` anaconda
- pip list 
- conda list
- ```
+ 아래 코드를 conda에 tensorflow 2.6.0 version 인지 확인
  
  
- 
+ ``` anaconda
+conda list
+```
+![tensorflow_버전확인](https://user-images.githubusercontent.com/68888169/169697959-88a38919-ef9e-4eea-8bd3-a08d445d80e6.png)
  
 
 참고 사이트
