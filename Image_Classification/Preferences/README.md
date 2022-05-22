@@ -206,6 +206,14 @@ cudatoolkit 11.2 가 없어서 11.0으로 다운그레이드 하여서 다운
 conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
 ```
 
+주피터 노트북을 켜고
+### pytorch 잘 깔렸는지 확인
+
+``` python
+import torch
+torch.cuda.is_avaviable()
+```
+
 
 ##### 참고 사이트
 ###### 시스템 환경변수 편집
