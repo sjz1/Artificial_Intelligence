@@ -74,8 +74,19 @@ jupyter kernelspec uninstall 커널이름
  
  -> CUDA version은 현재 버전이 아닌 권장 버전
  
+ 원인을 분석하기 위해 tensorflow version 확인
+ 
+ 아래 코드를 통해 pip 와 conda에 모두 tensorflow 2.6.0 version으로 다운 (conda만 해서 안된다는 가정)
+  ``` anaconda
+ pip list 
+ conda list
+ ```
+ 
+ 
+ 
  
 
+참고 사이트
 시스템 환경변수 편집
 https://cho000023.tistory.com/74
 #cuda 버전바꾸기
