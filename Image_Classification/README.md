@@ -75,7 +75,7 @@ jupyter kernelspec uninstall 커널이름
  
  -> CUDA version은 현재 버전이 아닌 권장 버전
  
- conda 와 tensorflow version 확인
+ cuda 와 tensorflow version 확인
  
  ![쿠다버전확인](https://user-images.githubusercontent.com/68888169/169698104-65e50697-df58-4cad-94f2-f6d3bda536f3.png)
  
@@ -89,7 +89,7 @@ jupyter kernelspec uninstall 커널이름
  아래 코드를 conda에 tensorflow 2.6.0 version 인지 확인
  
  ``` anaconda
-conda list
+cda list
 ```
 ![tensorflow_버전확인](https://user-images.githubusercontent.com/68888169/169697959-88a38919-ef9e-4eea-8bd3-a08d445d80e6.png)
  
@@ -97,7 +97,9 @@ conda list
  
  ![gpu호환](https://user-images.githubusercontent.com/68888169/169698057-29001df9-9eb1-408b-bfa9-08005f5b8008.png)
 
+필자는 cuda 버전을 11.2를 사용하므로
 
+위의 표에 따라 tensorflow-gpu 를 2.6.0으로 바꿔줌
 
 
 
