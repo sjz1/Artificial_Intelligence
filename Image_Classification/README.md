@@ -68,7 +68,8 @@ jupyter kernelspec uninstall 커널이름
  ``` anaconda
  nvidia-smi
  ```
- -> GPU가 사용되지 않는 것을 확인
+ -> GPU가 사용되지 않는 것을 확인     
+ 
  -> CUDA version은 현재 버전이 아닌 권장 버전
  
 
