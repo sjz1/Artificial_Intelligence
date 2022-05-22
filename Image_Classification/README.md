@@ -70,6 +70,17 @@ python -m ipykernel install --user --name ai_project2
 jupyter kernelspec uninstall 커널이름
  ```
 
+## 7. 커널을 사용하여서 jupyter notebook을 연 다음 
+ ``` python
+import tensorflow as tf
+ ```
+  ``` python
+from tensorflow.python.client import device_lib
+ ```
+  ``` python
+print(device_lib.list_local_devices())
+ ```
+
 ## 본인은 gpu가 보이지 않는 문제 발생
 
 오류내용(버전이 맞지 않음)
@@ -108,6 +119,7 @@ Follow the guide at https://www.tensorflow.org/install/gpu for how to download a
  ``` anaconda
 conda list
 ```
+
 ![tensorflow_버전확인](https://user-images.githubusercontent.com/68888169/169697959-88a38919-ef9e-4eea-8bd3-a08d445d80e6.png)
  
  tensorflow-gpu가 2.6.0이 아닌 것을 확인
@@ -120,7 +132,12 @@ conda list
 
 tensorflow-gpu다운로드
  ``` anaconda
-conda install -n vir_project2 tensorflow-gpu==2.6.0 -y
+conda install tensorflow==2.6.0
+```
+
+본인은 혹시 몰라서 pip 에도 다운로드 받음(pip와 conda랑은 다르다 pip는 지양하기)
+ ``` anaconda
+pip install tensorflow==2.6.0
 ```
 
 
@@ -147,7 +164,7 @@ CUDA -> v11.2 -> lib,include,bin 파일을 덮어쓰기
 위에 표에 따라 cuDNN 8.1 version 다운받아서 덮어씀
 
 
-#### 다운로드 링크
+### 다운로드 링크
 https://developer.nvidia.com/rdp/cudnn-archive
 
 (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2)
@@ -155,6 +172,16 @@ https://developer.nvidia.com/rdp/cudnn-archive
 //cuDNN 버전 안 맞으면 나오는 오류문구//
 Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
 
+
+### 확인해보기
+ ``` python
+import tensorflow as tf
+from tensorflow.python.client import device_lib
+print(device_lib.list_local_devices())
+ ```
+
+## 해결 완료
+![image](https://user-images.githubusercontent.com/68888169/169699255-a22e59c7-6ac9-463e-9456-1919ee0f3443.png)
 
 
 
