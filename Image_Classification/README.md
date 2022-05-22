@@ -69,21 +69,37 @@ jupyter kernelspec uninstall 커널이름
  nvidia-smi
  ```
  ![GPU사용x](https://user-images.githubusercontent.com/68888169/169697358-c8cc1a9e-beb6-44b2-9250-4c9a0d82c2a7.png)
+ 
 
  -> GPU가 사용되지 않는 것을 확인     
  
  -> CUDA version은 현재 버전이 아닌 권장 버전
  
- 원인을 분석하기 위해 tensorflow version 확인
+ conda 와 tensorflow version 확인
+ 
+ ![쿠다버전확인](https://user-images.githubusercontent.com/68888169/169698104-65e50697-df58-4cad-94f2-f6d3bda536f3.png)
+ 
+ conda activate 가상환경이름
+ 
+  ``` anaconda
+ conda activate vir_project2
+ ```
+ 
  
  아래 코드를 conda에 tensorflow 2.6.0 version 인지 확인
- 
  
  ``` anaconda
 conda list
 ```
 ![tensorflow_버전확인](https://user-images.githubusercontent.com/68888169/169697959-88a38919-ef9e-4eea-8bd3-a08d445d80e6.png)
  
+ tensorflow-gpu가 2.6.0이 아닌 것을 확인
+ 
+ ![gpu호환](https://user-images.githubusercontent.com/68888169/169698057-29001df9-9eb1-408b-bfa9-08005f5b8008.png)
+
+
+
+
 
 참고 사이트
 시스템 환경변수 편집
