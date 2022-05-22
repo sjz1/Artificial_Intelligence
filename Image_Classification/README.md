@@ -1,6 +1,12 @@
 # Image Classification Preferences
 Deep Learning for Image Classification with EM Algorithms
 
+
+## 0. nvidia 드라이버 및  cuda toolkit (회원가입필요)설치하기
+https://www.nvidia.com/download/index.aspx?lang=en-us
+https://developer.nvidia.com/cuda-toolkit-archive
+
+
 ## 1. anaconda version update
 관리자 권한으로 Anaconda prompt 띄움
  ``` anaconda
@@ -64,6 +70,16 @@ jupyter kernelspec uninstall 커널이름
  ```
 
 ## 본인은 gpu가 보이지 않는 문제 발생
+
+오류내용(버전이 맞지 않음)
+
+W tensorflow/core/common_runtime/gpu/gpu_device.cc:1835] Cannot dlopen some GPU libraries.
+
+Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. 
+
+Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+
+
 ### GPU사용 여부 확인
  ``` anaconda
  nvidia-smi
@@ -89,7 +105,7 @@ jupyter kernelspec uninstall 커널이름
  아래 코드를 conda에 tensorflow 2.6.0 version 인지 확인
  
  ``` anaconda
-cda list
+conda list
 ```
 ![tensorflow_버전확인](https://user-images.githubusercontent.com/68888169/169697959-88a38919-ef9e-4eea-8bd3-a08d445d80e6.png)
  
@@ -101,12 +117,57 @@ cda list
 
 위의 표에 따라 tensorflow-gpu 를 2.6.0으로 바꿔줌
 
+tensorflow-gpu다운로드
+ ``` anaconda
+conda install -n vir_project2 tensorflow-gpu==2.6.0 -y
+```
 
 
-참고 사이트
-시스템 환경변수 편집
+오류내용
+
+I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+
+
+2022-05-21 03:17:50.532733: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1835] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+[name: "/device:CPU:0"
+device_type: "CPU"
+memory_limit: 268435456
+locality {
+}
+incarnation: 16477647163233809568
+
+cudnn을 cuda파일에 덮어쓰기를 안해서 문제가 발생
+
+CUDA -> v11.2 -> lib,include,bin 파일을 덮어쓰기
+
+위에 표에 따라 cuDNN 8.1 version 다운받아서 덮어씀
+
+
+#### 다운로드 링크
+https://developer.nvidia.com/rdp/cudnn-archive
+
+(C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2)
+
+//cuDNN 버전 안 맞으면 나오는 오류문구//
+Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+
+
+
+
+
+
+
+### 참고 사이트
+#### 시스템 환경변수 편집
 https://cho000023.tistory.com/74
-#cuda 버전바꾸기
+#### cuda 버전바꾸기
 https://tw0226.tistory.com/79?category=872393
-
-
+#### cuda nvidia gpu cudnn 버전확인
+https://velog.io/@khs0415p/NVIDIA-GPU-CUDA-CUDNN-%EB%B2%84%EC%A0%84-%ED%99%95%EC%9D%B8
+### GPU인식문제
+https://aeir.tistory.com/entry/Tensorflow-GPU-%EC%9E%91%EB%8F%99%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%84%EB%95%8C-%EC%9E%AC%EC%84%A4%EC%B9%98-%EC%97%86%EC%9D%B4-%EC%88%98%EB%A6%AC%ED%95%98%EB%8A%94-%EB%B2%95?category=896072?category=896072
+### cuDNN 버전 문제
+https://electrondiy.tistory.com/m/108
