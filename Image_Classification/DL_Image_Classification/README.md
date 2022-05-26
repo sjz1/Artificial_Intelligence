@@ -6,6 +6,8 @@ h5py install 하지 않아 오류 발생
 ```anaconda
 pip install --upgrade h5py
 ```
+
+
 # ------------------------------------------------------------------------------
 
 
@@ -15,6 +17,10 @@ pip install --upgrade h5py
 pip uninstall -y tensorflow keras tf-nightly keras-nightly
 pip install tensorflow==2.6.0
 ```
+
+
+# ------------------------------------------------------------------------------
+
 
 ```python
 from tensorflow import keras
@@ -35,6 +41,7 @@ pip install keras==2.6.* -i https://pypi.douban.com/simple/
 
 # ------------------------------------------------------------------------------
 
+
 ## 정규화
 ## 오류 cannot import name 'to_categorical' from 'keras.utils'
 from keras.utils import to_categorical
@@ -45,6 +52,7 @@ from tensorflow.keras.utils import to_categorical
 ```
 
 # ------------------------------------------------------------------------------
+
 
 # 참고사이트 
 https://www.cnblogs.com/Sofiacodes/p/16295957.html
