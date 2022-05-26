@@ -42,8 +42,8 @@ pip install keras==2.6.* -i https://pypi.douban.com/simple/
 # ------------------------------------------------------------------------------
 
 
-## In normalization
-#### 오류 cannot import name 'to_categorical' from 'keras.utils'
+### In normalization
+#### error: cannot import name 'to_categorical' from 'keras.utils'
 from keras.utils import to_categorical
 
 (edit)
