@@ -6,7 +6,7 @@ h5py install 하지 않아 오류 발생
 ```anaconda
 pip install --upgrade h5py
 ```
-# -----------------------------------------------
+# ---------------------------------------------------------------------------------------
 
 
 ## ImportError: cannot import name 'LayerNormalization' from 'tensorflow.python.keras.layers.normalization' (C:\Users\tmdwh\.conda\envs\vir_project2\lib\site-packages\tensorflow\python\keras\layers\normalization\__init__.py)
@@ -33,7 +33,7 @@ pip install keras
 pip install keras==2.6.* -i https://pypi.douban.com/simple/
 ```
 
-# -----------------------------------------------
+# ---------------------------------------------------------------------------------------
 
 ## 정규화
 ## 오류 cannot import name 'to_categorical' from 'keras.utils'
