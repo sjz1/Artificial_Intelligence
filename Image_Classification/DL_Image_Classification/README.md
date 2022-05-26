@@ -56,6 +56,7 @@ from tensorflow.keras.utils import to_categorical
 
 # 참고사이트 
 https://www.cnblogs.com/Sofiacodes/p/16295957.html
+
 https://hdevstudy.tistory.com/116
 
 
